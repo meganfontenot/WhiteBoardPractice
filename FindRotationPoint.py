@@ -34,7 +34,7 @@ import math
 # checked words may have to go into a new list after passing through the function.
 
 def findRotationPoint(words):
-    startWord = words[]  # put 0 if it doesnt default
+    startWord = words[]  # put 0 if it doesn't default
 
     while topIndex >= bottomIndex:
         # try word
