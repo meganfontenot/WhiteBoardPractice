@@ -12,3 +12,18 @@ function longestString(arr) {
 }
 
 longestString(['hello', 'goodbye', 'abc']);
+
+//  SOLUTION
+
+function longestString(arr) {
+  let compareLength = 0;
+  let longestString;
+  for (let i = 0; i < arr.length; i++) {
+    const stringLength = arr[i].length;
+    if (stringLength > compareLength) {
+      compareLength = stringLength;
+      longestString = arr[i];
+    }
+  }
+  return longestString;
+}
