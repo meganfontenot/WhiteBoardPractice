@@ -38,4 +38,4 @@ function longestString(arr) {
   return arr[lengths.indexOf(Math.max(...lengths))];
 }
 
-console.log(longestString(['hello', 'goodbye', 'abc']));
+console.log(longestString(['hello', 'bye', 'abc']));
