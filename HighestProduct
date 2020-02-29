@@ -63,14 +63,6 @@ int main(int argc, char* argv)
 
 //  SOLUTION  //
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
-
-#define MAX(a, b) (((a) > (b)) ? (a) : (b))
-#define MIN(a, b) (((a) < (b)) ? (a) : (b))
-#define SIZE(arr) (sizeof(arr) / sizeof(arr[0]))
-
 int highestProductOf3(int arr[], int length)
 {
   int i;
