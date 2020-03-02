@@ -75,7 +75,7 @@ function telephoneWords(str) {
       innerRecurse(currentWord + currentLetters[i], index + 1);
     }
   }
-  innerRecurse('', 1);
+  innerRecurse('', 0);
   return words;
 }
 
