@@ -8,26 +8,26 @@ const phoneDigitsToLetters = {
   6: 'MNO',
   7: 'PQRS',
   8: 'TUV',
-  9: 'WXYZ'
+  9: 'WXYZ',
 };
 
-const telephoneWords = function (str) {
+const telephoneWords = function(str) {
   const target = [];
   let i;
   let j;
   const digitArr = str.split('');
-    if (str) {
-      for (i = 0; i < digitArr.length; i++) {
+  if (str) {
+    for (i = 0; i < digitArr.length; i++) {
       target.push(phoneDigitsToLetters[str[i]]);
-      }
     }
+  }
 
   function combinations(arr) {
     const newArr = arr.slice(0);
     if (newArr.length === 0) {
       return [];
     }
-    
+
     let res = [];
     const top = newArr.shift();
     const ret = combinations(newArr);
@@ -50,7 +50,7 @@ telephoneWords('2745');
 
 //  SOLUTION  //
 
- const phoneDigitsToLetters = {
+const phoneDigitsToLetters = {
   0: '0',
   1: '1',
   2: 'ABC',
@@ -60,19 +60,22 @@ telephoneWords('2745');
   6: 'MNO',
   7: 'PQRS',
   8: 'TUV',
-  9: 'WXYZ'
+  9: 'WXYZ',
 };
 
 function telephoneWords(str) {
   const words = [];
   function innerRecurse(currentWord, index) {
+    if (currentWord.length === str.length) {
+      words.push(currentWord);
+      return;
     }
     const currentLetters = phoneDigitsToLetters[str[index]];
     for (let i = 0; i < currentLetters.length; i++) {
       innerRecurse(currentWord + currentLetters[i], index + 1);
     }
   }
-  innerRecurse('', 0);
+  innerRecurse('', 1);
   return words;
 }
 
