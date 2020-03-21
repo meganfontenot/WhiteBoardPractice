@@ -30,8 +30,7 @@ import math
 # pick a word in our list
 # when checking, it's either going to be the 1st (A word) or its going to come after
 # As the while loop check each word its needs to discard the words checked in the same order it received them?
-# once we get to the the "startWord" then the dictionary would be in perfect abcd order.
-# checked words may have to go into a new list after passing through the function.
+
 
 def findRotationPoint(words):
     startWord = words[]  # put 0 if it doesn't default
