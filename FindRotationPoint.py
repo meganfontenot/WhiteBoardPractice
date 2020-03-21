@@ -24,7 +24,6 @@ import math
 # Write a function findRotationPoint that receives an array of words and calculates the index of the point where the rotation occurs.
 # With the above list of words, your function would return 5.
 
-# Analyze the time and space complexity of your solution. Can we write a solution that performs better than linear time?
 
 
 # pick a word in our list
