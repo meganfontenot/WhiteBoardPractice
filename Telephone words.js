@@ -21,3 +21,11 @@ const telephoneWords = function (str) {
       target.push(phoneDigitsToLetters[str[i]]);
       }
     }
+
+  function combinations(arr) {
+    const newArr = arr.slice(0);
+    if (newArr.length === 0) {
+      return [];
+    }
+    
+    
