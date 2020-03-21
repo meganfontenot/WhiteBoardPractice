@@ -28,8 +28,7 @@ import math
 
 
 # pick a word in our list
-# when checking, it's either going to be the 1st (A word) or its going to come after
-# As the while loop check each word its needs to discard the words checked in the same order it received them?
+
 
 
 def findRotationPoint(words):
