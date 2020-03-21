@@ -21,8 +21,7 @@ import math
 #   'karpatka',
 #   'othellolagkage',
 # ]
-# Write a function findRotationPoint that receives an array of words and calculates the index of the point where the rotation occurs.
-# With the above list of words, your function would return 5.
+
 
 
 
