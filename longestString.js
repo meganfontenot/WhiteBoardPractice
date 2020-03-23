@@ -15,15 +15,27 @@ longestString(['hello', 'goodbye', 'abc']);
 
 //  SOLUTION
 
+// function longestString(arr) {
+//   let compareLength = 0;
+//   let longestString;
+//   for (let i = 0; i < arr.length; i++) {
+//     const stringLength = arr[i].length;
+//     if (stringLength > compareLength) {
+//       compareLength = stringLength;
+//       longestString = arr[i];
+//     }
+//   }
+//   return longestString;
+// }
+
+// another solution
+
 function longestString(arr) {
-  let compareLength = 0;
-  let longestString;
+  const lengths = [];
   for (let i = 0; i < arr.length; i++) {
-    const stringLength = arr[i].length;
-    if (stringLength > compareLength) {
-      compareLength = stringLength;
-      longestString = arr[i];
-    }
+    lengths.push(arr[i].length);
   }
-  return longestString;
+  return arr[lengths.indexOf(Math.max(...lengths))];
 }
+
+console.log(longestString(['hello', 'goodbye', 'abc']));
